@@ -204,7 +204,7 @@ public class GachaListener implements Listener{
 
       ItemStack sendItem = pickItem.clone();
       p.getInventory().addItem(sendItem);
-      // GachaUtility.sendMessage(p, ChatColor.translateAlternateColorCodes('&', gacha.getConfig().getString("found-pick")));
+      GachaUtility.sendMessage(p, ChatColor.translateAlternateColorCodes('&', gacha.getConfig().getString("found-pick")));
       //	Bukkit.getServer().broadcastMessage(
 	  //				String.format("%sさんに%sが%s個当たりました！", p.getName(), sendItem.getType(), sendItem.getAmount()));
     } catch (Exception e){
